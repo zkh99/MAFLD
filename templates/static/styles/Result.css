@@ -1,0 +1,39 @@
+.container {
+    max-width: 700px;
+    margin: 100px auto;
+    padding: 30px;
+    background-color: #12372ad5;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #FBFADA;
+    font-size: 36px;
+}
+
+.container p {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #FBFADA;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #fbfada;
+    color: #12372A;;
+    text-decoration: none;
+    border-radius: 4px;
+    font-family: Dosis;
+    font-weight: 600;
+    font-size: 25px;
+    border-radius: 10px;
+}
+
+.back-link:hover {
+    background-color: #ADBC9F;
+}

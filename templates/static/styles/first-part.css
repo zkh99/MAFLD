@@ -1,0 +1,85 @@
+.first {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 90px;
+    padding: 60px;
+    gap: 20px; /* Optional: Adds space between the columns */
+}
+.first-right {
+    margin-left: 20px;
+    margin-right: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    flex: 1;
+
+}
+
+.first-right-img {
+    display: flex;
+    margin-right: 0px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    padding: 0;
+}
+.first-right-image {
+    width: 500px;
+    height: 600px;
+    margin-right: 0px;
+    padding: 0;
+    object-fit: cover;
+    align-items: center;
+}
+.first-left {
+    /* margin: 10px;
+    padding-top: 10px; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex: 1;
+    /* background-color: aqua; */
+}
+.first-left-title {
+    font-weight: 800;
+    font-size: 50px;
+    margin-bottom: 10px;
+    line-height: 50px;
+
+}
+.first-left-text {
+    font-size: 20px;
+    text-align: justify;
+}
+
+@media (max-width: 1000px) {
+    .first-right {
+        display: none;
+    }
+}
+
+.first-left-buttons button{
+    font-family: Alibaba;
+    margin-top: 10px;
+    margin-right: 40px;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 20px;
+    padding-bottom: 10px;
+    border: 0px none;
+    border-radius: 10px;
+
+    background-color: #fbfada85;
+    box-shadow: 0px 0px 5px rgba(173, 188, 159, 0.777);
+    transition: all 0.15s;
+    cursor: pointer;
+}
+
+.first-left-b:hover {
+color: #fbfada;
+background-color: #436850;
+}

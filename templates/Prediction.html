@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAFLD Prediction</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/Styles/general.css">
+    <link rel="stylesheet" href="static/Styles/header.css">
+    <link rel="stylesheet" href="static/Styles/first-part.css">
+    <link rel="stylesheet" href="static/Styles/Prediction.css">
+
+
+    <style>
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-left">
+            <img class="header-logo" src="static/icon/logo.png" alt="Logo">
+        </div>
+
+        <div class="header-right">
+            <a href="{{ url_for('home') }}"><p class="header-link">Home</p></a>
+            <a href="{{ url_for('Prediction') }}"><p class="header-link">Prediciton</p></a>
+            <p class="header-link">Formula</p>
+            <p class="header-link">Contact Us</p>
+
+            <button>Sign Up</button>
+            <button style="
+            margin-right: 60px;
+            ">Login</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1 class="container-title">MAFLD in T2DM Patients Prediction</h1>
+        <form action="/predict" method="post">
+            <div class="form-group">
+                <label for="PLT">PLT:</label>
+                <input type="number" name="PLT" step="any" placeholder="Enter Platelet Count">
+            </div>
+            <div class="form-group">
+                <label for="FHCAD">FHCAD:</label>
+                <input type="number" name="FHCAD" step="any" placeholder="Enter 1 if Family History of CAD">
+            </div>
+            <div class="form-group">
+                <label for="Age">Age:</label>
+                <input type="number" name="Age" step="any" placeholder="Enter Age (years)">
+            </div>
+            <div class="form-group">
+                <label for="Waist">Waist:</label>
+                <input type="number" name="Waist" step="any" placeholder="Enter Waist (cm)">
+            </div>
+            <div class="form-group">
+                <label for="DBP">DBP:</label>
+                <input type="number" name="DBP" step="any" placeholder="Enter Diastolic Blood Pressure">
+            </div>
+            <div class="form-group">
+                <label for="CRP">CRP:</label>
+                <input type="number" name="CRP" step="any" placeholder="Enter C-reactive protein">
+            </div>
+            <div class="form-group">
+                <label for="VitD">VitD:</label>
+                <input type="number" name="VitD" step="any" placeholder="Enter Vitamin D">
+            </div>
+            <div class="form-group">
+                <label for="Chl">Chl:</label>
+                <input type="number" name="Chl" step="any" placeholder="Enter Cholesterol">
+            </div>
+            <div class="form-group">
+                <label for="HDL">HDL:</label>
+                <input type="number" name="HDL" step="any" placeholder="Enter HDL">
+            </div>
+            <div class="form-group">
+                <label for="LDL">LDL:</label>
+                <input type="number" name="LDL" step="any" placeholder="Enter LDL">
+            </div>
+            <div class="form-group">
+                <label for="TG">TG:</label>
+                <input type="number" name="TG" step="any" placeholder="Enter Triglycerides">
+            </div>
+            <div class="form-group">
+                <label for="ALT">ALT:</label>
+                <input type="number" name="ALT" step="any" placeholder="Enter ALT">
+            </div>
+            <div class="form-group">
+                <label for="ALKP">ALKP:</label>
+                <input type="number" name="ALKP" step="any" placeholder="Enter ALKP">
+            </div>
+            <div class="form-group">
+                <label for="CAD">CAD:</label>
+                <input type="number" name="CAD" step="any" placeholder="Enter CAD">
+            </div>
+            <div class="form-group">
+                <label for="PCI">PCI:</label>
+                <input type="number" name="PCI" step="any" placeholder="Enter 1 if you had PCI">
+            </div>
+            <div class="form-group">
+                <label for="CVA">CVA:</label>
+                <input type="number" name="CVA" step="any" placeholder="Enter CVA">
+            </div>
+            <div class="form-group">
+                <label for="HOMA">HOMA:</label>
+                <input type="number" name="HOMA" step="any" placeholder="Enter HOMA">
+            </div>
+            <div class="form-group">
+                <label for="BMI">BMI:</label>
+                <input type="number" name="BMI" step="any" placeholder="Enter BMI">
+            </div>
+            <div class="form-group form-group-full">
+                <label for="AIP">AIP:</label>
+                <input type="number" name="AIP" step="any" placeholder="Enter AIP">
+            </div>
+            <input class="predict-button" type="submit" value="Predict">
+        </form>
+    </div>
+</body>
+</html>

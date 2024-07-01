@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/Styles/general.css">
+    <link rel="stylesheet" href="static/Styles/header.css">
+    <link rel="stylesheet" href="static/Styles/first-part.css">
+    <link rel="stylesheet" href="static/Styles/Prediction.css">
+    <link rel="stylesheet" href="static/Styles/Result.css">
+
+    <style>
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-left">
+            <img class="header-logo" src="static/icon/logo.png" alt="Logo">
+        </div>
+
+        <div class="header-right">
+            <a href="{{ url_for('home') }}"><p class="header-link">Home</p></a>
+            <a href="{{ url_for('Prediction') }}"><p class="header-link">Prediciton</p></a>
+            <p class="header-link">Formula</p>
+            <p class="header-link">Contact Us</p>
+
+            <button>Sign Up</button>
+            <button style="
+            margin-right: 60px;
+            ">Login</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Prediction Result</h1>
+        <p>The predicted result is: <strong>{{ prediction }}</strong></p>
+        <a href="/" class="back-link">Back to Home</a>
+    </div>
+</body>
+</html>
